@@ -9,5 +9,5 @@ vex::motor Motor7 = vex::motor(vex::PORT7);
 vex::digital_in ArmLimitSwitch = vex::digital_in(Brain.ThreeWirePort.A);
 vex::controller Controller2 = vex::controller(vex::controllerType::partner);
 vex::controller Controller1 = vex::controller();
-vex::digital_out Pneumatic = vex::pwm_out(Brain.ThreeWirePort.A);
+vex::digital_out Pneumatic = vex::digital_out(Brain.ThreeWirePort.A);
 vex::vision VisionSensor = vex::vision(vex::PORT1);
