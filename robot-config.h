@@ -1,0 +1,13 @@
+vex::brain Brain;
+vex::motor leftMotor = vex::motor(vex::PORT1);
+vex::motor leftMotor2 = vex::motor(vex::PORT2);
+vex::motor rightMotor = vex::motor(vex::PORT3);
+vex::motor rightMotor2 = vex::motor(vex::PORT4);
+vex::motor Motor5 = vex::motor(vex::PORT5);
+vex::motor Motor6 = vex::motor(vex::PORT6);
+vex::motor Motor7 = vex::motor(vex::PORT7);
+vex::digital_in ArmLimitSwitch = vex::digital_in(Brain.ThreeWirePort.A);
+vex::controller Controller2 = vex::controller(vex::controllerType::partner);
+vex::controller Controller1 = vex::controller();
+vex::digital_out Pneumatic = vex::pwm_out(Brain.ThreeWirePort.A);
+vex::vision VisionSensor = vex::vision(vex::PORT1);
