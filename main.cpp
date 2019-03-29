@@ -2,7 +2,7 @@
           
 
 int main() {
-    for(;;){
+    for(;;){ //driver control
          leftMotor.spin(vex::directionType::fwd, (Controller1.Axis3.value() + Controller1.Axis1.value()), vex::velocityUnits::pct);
          rightMotor.spin(vex::directionType::fwd, (Controller1.Axis3.value() - Controller1.Axis1.value()), vex::velocityUnits::pct);
          leftMotor2.spin(vex::directionType::fwd, (Controller1.Axis3.value() + Controller1.Axis1.value()), vex::velocityUnits::pct);
@@ -10,9 +10,11 @@ int main() {
         vex::task::sleep(20);
     }
    
-if
-    Controller1.ButtonR1.pressing(Pneumatic = 1);
+if(Controller1.ButtonR1.pressing()){
+    Pneumatic = 1;
+} else {
+    Pneumatic = 0;
+}
 }
 //Competitiion.isAutonomous(){
-//if (true){
-    
+//if (true);
